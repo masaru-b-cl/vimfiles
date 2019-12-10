@@ -1,5 +1,8 @@
 " ステータスラインにファイル名とエンコーディング名(BOM有無)、改行コード表示
-set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).(&bomb=='1'?'<BOM>':'').']['.&ff.']'}%=\ (%v,%l)/%L%8P\
+set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).(&bomb=='1'?'<BOM>':'').']['.&ff.']'}%=\ (%v,%l)/%L%8P
+
+" ステータスラインを常に表示する
+set laststatus=2
 
 " 行番号：表示
 set number
@@ -7,8 +10,12 @@ set number
 " バックアップ先を一つのフォルダーにまとめる
 set backupdir=~/.vim/backup
 
-" アンドゥファイルを一つのフォルダーにまとめる
-set undodir=~/.vim/undo
+" アンドゥ履歴をファイルに保存し、一つのフォルダーにまとめる
+if has("persistent_undo")
+    set undofile
+    set undodir=~/.vim/undo
+endif
+
 
 " スワップファイルを一つのフォルダーにまとめる
 set directory=~/.vim/swp
@@ -23,8 +30,8 @@ set tabstop=2
 " 自動インデント：あり
 set autoindent
 
-" 折り返し：あり
-set wrap
+" 折り返し：なし
+set nowrap
 
 " インデントされた行を折り返したとき、折り返し後行の開始位置をインデントに合わせる
 set breakindent
@@ -59,3 +66,7 @@ set noequalalways
 
 " インクリメンタルサーチ
 set incsearch
+
+" Unicodeでマルチバイト文字幅を全角にする
+set ambiwidth=double
+

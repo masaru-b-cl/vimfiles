@@ -12,4 +12,7 @@ set guioptions+=b
 " リスト文字：タブや改行の表示を変更する
 set listchars=tab:»･,trail:･,eol:↲,extends:»,precedes:«,nbsp:%
 
-set guifont=MyricaM_M:h14
+set guifont=Cascadia_Code:h14
+
+" リガチャをONに
+set macligatures

@@ -4,7 +4,7 @@ set columns=120
 set lines=36
 
 " カラースキーマ
-colorscheme molokai
+colorscheme monokai
 
 " 水平スクロールバー表示
 set guioptions+=b

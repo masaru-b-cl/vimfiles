@@ -1,9 +1,6 @@
 [submodule "pack/colorschemes/start/vim-monokai"]
 	path = pack/colorschemes/start/vim-monokai
 	url = https://github.com/sickill/vim-monokai.git
-[submodule "pack/plugins/start/tabnine-vim"]
-	path = pack/plugins/start/tabnine-vim
-	url = https://github.com/zxqfl/tabnine-vim.git
 [submodule "pack/plugins/start/undotree"]
 	path = pack/plugins/start/undotree
 	url = https://github.com/mbbill/undotree.git

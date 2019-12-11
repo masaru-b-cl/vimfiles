@@ -1,3 +1,4 @@
+set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp932,utf-16,utf-16le,euc-jp,iso-2022-jp
 
